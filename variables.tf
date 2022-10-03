@@ -1,11 +1,12 @@
+variable "name" {
+  type        = string
+  description = " The NAT rule's name."
+}
+
 variable "type" {
   type        = string
   description = "NAT type. This can be ipv4 (default), nat64, or nptv6."
-}
-
-variable "nat_name" {
-  type        = string
-  description = " The NAT rule's name."
+  default = "ipv4"
 }
 
 variable "description" {
@@ -17,6 +18,7 @@ variable "source_zones" {
   type        = list(string)
   description = "List of source zones."
 }
+
 variable "destination_zone" {
   type        = string
   description = "List of source zones."
@@ -53,11 +55,6 @@ variable "sat_address_type" {
   type        = string
   description = "Source address translation address type. This can be interface-address or translated-address"
   default     = "interface-address"
-}
-variable "sat_ip_address" {
-  type        = string
-  description = "Source address translation IP address."
-  default     = "None"
 }
 
 # Destination Address Translation
