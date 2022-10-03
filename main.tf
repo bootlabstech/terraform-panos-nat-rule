@@ -11,7 +11,6 @@ resource "panos_nat_rule" "nat_rule" {
   sat_type              = var.sat_type
   sat_address_type      = var.sat_address_type
   sat_interface         = var.sat_interface
-  sat_ip_address        = var.sat_ip_address
   dat_type              = var.dat_type
   dat_address           = var.dat_address
   dat_port              = var.dat_port
