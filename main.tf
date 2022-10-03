@@ -1,5 +1,5 @@
 resource "panos_nat_rule" "nat_rule" {
-  name                  = var.nat_name
+  name                  = var.name
   type                  = var.type
   description           = var.description
   source_zones          = var.source_zones
@@ -10,7 +10,7 @@ resource "panos_nat_rule" "nat_rule" {
   service               = var.service
   sat_type              = var.sat_type
   sat_address_type      = var.sat_address_type
-  sat_interface         = var.to_interface
+  sat_interface         = var.sat_interface
   sat_ip_address        = var.sat_ip_address
   dat_type              = var.dat_type
   dat_address           = var.dat_address

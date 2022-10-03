@@ -57,6 +57,11 @@ variable "sat_address_type" {
   default     = "interface-address"
 }
 
+variable "sat_interface" {
+  type        = string
+  description = "The interface name. example ethernet1/1"
+}
+
 # Destination Address Translation
 variable "dat_type" {
   type        = string
