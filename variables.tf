@@ -6,7 +6,7 @@ variable "name" {
 variable "type" {
   type        = string
   description = "NAT type. This can be ipv4 (default), nat64, or nptv6."
-  default = "ipv4"
+  default     = "ipv4"
 }
 
 variable "description" {

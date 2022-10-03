@@ -24,4 +24,3 @@ resource "panos_nat_rule" "nat_rule" {
 
 
 
-
